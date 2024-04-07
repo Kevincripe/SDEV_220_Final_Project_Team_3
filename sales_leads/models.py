@@ -12,6 +12,7 @@ class SalesLeads(models.Model):
     state = models.CharField(max_length=200)
     zipcode = models.CharField(max_length=200)
     telephone = models.CharField(max_length=200)
+    comments = models.TextField(default='Customer Request')
     
 
     def publish(self):
@@ -19,5 +20,5 @@ class SalesLeads(models.Model):
         self.save()
 
     def __str__(self):
-        return self.first_name + self.last_name + self.telephone
+        return f"{self.first_name} {self.last_name} {self.telephone} {self.comments}"
     
