@@ -27,6 +27,6 @@ class EmployeeVendor(models.Model):
         if EmployeeVendor.job_title is not None:
             return f"{self.job_title} {self.first_name} {self.last_name} {self.telephone}"
 
-        elif EmployeeVendor.business_name is not None:
-            return f"{self.business_name} {self.first_name} {self.last_name} {self.telephone}"
+        elif EmployeeVendor.vendor_type is not None:
+            return f"{self.vendor_type} {self.first_name} {self.last_name} {self.telephone}"
         
