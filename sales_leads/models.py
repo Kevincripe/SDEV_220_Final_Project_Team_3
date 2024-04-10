@@ -3,7 +3,7 @@ from django.db import models
 from django.utils import timezone
 
 # class for Sales leads
-class SalesLeads(models.Model):
+class SalesLead(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     first_name = models.CharField(max_length=200)
     last_name = models.CharField(max_length=200)
