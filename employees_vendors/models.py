@@ -12,7 +12,7 @@ class EmployeeVendor(models.Model):
     state = models.CharField(max_length=200)
     zipcode = models.CharField(max_length=200)
     telephone = models.CharField(max_length=200)
-    job_title = models.CharField(max_length=200, default='None')
+    title = models.CharField(max_length=200, default='Vendor or Job Title')
     business_name = models.CharField(max_length=200, default='None')
     vendor_type = models.CharField(max_length=200, default='None')
 
@@ -23,10 +23,6 @@ class EmployeeVendor(models.Model):
 
     # string return method
     def __str__(self):
-        # Logic block to determine if employee or vendor
-        if EmployeeVendor.job_title is not None:
-            return f"{self.job_title} {self.first_name} {self.last_name} {self.telephone}"
-
-        elif EmployeeVendor.vendor_type is not None:
-            return f"{self.vendor_type} {self.first_name} {self.last_name} {self.telephone}"
         
+        return f"{self.title} {self.vendor_type} {self.first_name} {self.last_name} {self.telephone}"
+      
