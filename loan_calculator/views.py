@@ -5,3 +5,6 @@ from django.http import HttpResponse
 
 def loan_calculator(request):
     return HttpResponse("Hello loan_calc!")
+
+def loan_calc_results(request):
+    return render(request, 'loan_calculator/loan_calc_results.html', {})

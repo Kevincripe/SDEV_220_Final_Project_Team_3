@@ -5,4 +5,6 @@ from django.http import HttpResponse
 def employees_vendors(request):
     return HttpResponse("Hello emp_vend!")
 
+def employees_vendors_list(request):
+    return render(request, 'employees_vendors/employees_vendors_list.html', {})
 

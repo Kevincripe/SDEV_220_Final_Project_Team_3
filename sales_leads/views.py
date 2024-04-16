@@ -7,3 +7,4 @@ def index(request):
 
 def sales_lead_list(request):
     return render(request, 'sales_leads/sales_lead_list.html', {})
+
