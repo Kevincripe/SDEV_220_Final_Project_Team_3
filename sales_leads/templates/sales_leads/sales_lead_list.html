@@ -1,10 +1,29 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+<title>Boost Auto LLC</title>
+<meta charset="utf-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+</head>
 <body>
-    <h1>SDEV_220_Final_Project_Team_3</h1>
-    <h2>Sales Lead List</h2>
-    <p>Hi there!</p>
-    <p>It works!</p>
-    
+
+<header>
+<h1><a>Boost Auto LLC</a></h1>
+</header>
+{% block content %}
+{% for sale in sales %}
+{{ sales }}
+{% endfor %}
+ {% endblock %}
+
+
+<footer>
+        Copyright &copy; 2024 SDEV220 Team 3
+        This Document Was Last Modified on:
+          <div><script>document.write(document.lastModified);</script></div>
+</footer>
+</div>
 </body>
 </html>

@@ -13,6 +13,7 @@ class SalesLead(models.Model):
     zipcode = models.CharField(max_length=200)
     telephone = models.CharField(max_length=200)
     comments = models.TextField(default='Customer Request')
+    published_date = models.DateTimeField(blank=True, null=True)
     
     # publish date
     def publish(self):
