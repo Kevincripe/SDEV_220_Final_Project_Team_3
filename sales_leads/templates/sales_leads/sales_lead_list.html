@@ -12,14 +12,15 @@ content="width=device-width, initial-scale=1.0">
 <body>
 
     <header>
-        <h1><a href="/">Sales Leads</a></h1>
+        <h1><a href="/">Boost Auto LLC Sales Leads</a></h1>
     </header>
     {% block content %}
     {% for sale in sales %}
         <article>
-            <time>published: {{ sale.published_date }}</time>
-            <h2><a href="">{{ sale.first_name }}</a></h2>
+            <h2><a href="">{{ sale.first_name }} {{ sale.last_name }}</a></h2>
+            <time>Lead Taken: {{ sale.published_date }}</time>
             <p>{{ sale.telephone }}</p>
+            <p>{{ sale.comments }}</p>
         </article>
     {% endfor %}
     {% endblock %}
