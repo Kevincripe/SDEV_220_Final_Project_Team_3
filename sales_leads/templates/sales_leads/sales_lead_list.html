@@ -17,9 +17,9 @@ content="width=device-width, initial-scale=1.0">
     {% block content %}
     {% for sale in sales %}
         <article>
-            <time>published: {{ sales.published_date }}</time>
-            <h2><a href="">{{ sales.first_name }}</a></h2>
-            <p>{{ sales.telephone }}</p>
+            <time>published: {{ sale.published_date }}</time>
+            <h2><a href="">{{ sale.first_name }}</a></h2>
+            <p>{{ sale.telephone }}</p>
         </article>
     {% endfor %}
     {% endblock %}
