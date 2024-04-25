@@ -13,8 +13,9 @@ class EmployeeVendor(models.Model):
     zipcode = models.CharField(max_length=200)
     telephone = models.CharField(max_length=200)
     title = models.CharField(max_length=200, default='Vendor or Job Title')
-    business_name = models.CharField(max_length=200, default='None')
-    vendor_type = models.CharField(max_length=200, default='None')
+    business_name = models.CharField(max_length=200, blank=True, null=True)
+    vendor_type = models.CharField(max_length=200, blank=True, null=True)
+    published_date = models.DateTimeField(blank=True, null=True)
 
     # publish date
     def publish(self):
