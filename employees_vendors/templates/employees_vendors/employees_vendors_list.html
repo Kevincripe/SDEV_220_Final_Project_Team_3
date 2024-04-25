@@ -1,19 +1,5 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Boost Auto LLC</title>
-<meta charset="utf-8">
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="{% static 'css/emp_vend.css' %}">
-</head>
-<body>
+{% extends 'employees_vendors/base.html' %}
 
-    <header>
-        <h1><a href="/">Boost Auto LLC Employees and Vendors</a></h1>
-        
-    </header>
     {% block content %}
     {% for vendor in vendors %}
         <article>
@@ -26,12 +12,3 @@ content="width=device-width, initial-scale=1.0">
         </article>
     {% endfor %}
     {% endblock %}
-
-<footer>
-        Copyright &copy; 2024 SDEV220 Team 3
-        This Document Was Last Modified on:
-          <div><script>document.write(document.lastModified);</script></div>
-</footer>
-</div>
-</body>
-</html>

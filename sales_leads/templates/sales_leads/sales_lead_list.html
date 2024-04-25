@@ -1,19 +1,4 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Boost Auto LLC</title>
-<meta charset="utf-8">
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="{% static 'css/sales.css' %}">
-</head>
-<body>
-
-    <header>
-        <h1><a href="/">Boost Auto LLC Sales Leads</a></h1>
-      
-    </header>
+{% extends 'sales_leads/base.html' %}
 
     {% block content %}
     {% for sale in sales %}
@@ -25,12 +10,3 @@ content="width=device-width, initial-scale=1.0">
         </article>
     {% endfor %}
     {% endblock %}
-
-<footer>
-        Copyright &copy; 2024 SDEV220 Team 3
-        This Document Was Last Modified on:
-          <div><script>document.write(document.lastModified);</script></div>
-</footer>
-</div>
-</body>
-</html>

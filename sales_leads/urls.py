@@ -5,4 +5,3 @@ urlpatterns = [
     path('', views.sales_lead_list, name='sales_lead_list'),
 
 ]
-

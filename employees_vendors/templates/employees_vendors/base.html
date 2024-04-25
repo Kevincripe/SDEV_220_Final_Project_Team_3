@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Boost Auto LLC</title>
+<meta charset="utf-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{% static 'css/emp_vend.css' %}">
+</head>
+<body>
+
+    <header>
+        <h1><a href="/">Boost Auto LLC Employees and Vendors</a></h1>
+        <ul>
+            <li><a href="{% url 'sales_lead_list' %}">Sales Leads</a></li>
+            <li><a href="{% url 'employees_vendors_list' %}">Employees and Vendors</a></li>
+            <li><a href="{% url 'loan_calc_results' %}">Loan Calculator</a></li>
+          </ul>
+    </header>
+<main>
+    <div>
+        {% block content %}
+        
+        {% endblock %}
+    </div>
+    
+</main>
+    
+
+<footer>
+</footer>
+</div>
+</body>
+</html>
