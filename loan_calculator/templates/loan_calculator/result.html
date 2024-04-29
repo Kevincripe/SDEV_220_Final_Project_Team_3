@@ -1,8 +1,14 @@
 
 
 <div class="center">
-    The result is: 
-    <h1>{{ans}}</h1>
+    The Monthly Payment is: 
+    <h1>{{ monthly_payment|floatformat:2 }}</h1>
+
+    The Total Paid is: 
+    <h1>{{ total_paid|floatformat:2 }}</h1>
+
+    The Total Interest Paid is: 
+    <h1>{{ total_interest|floatformat:2 }}</h1>
     
     <a href="{% url 'loan_calc' %}">Go Back</a>
     </div>
