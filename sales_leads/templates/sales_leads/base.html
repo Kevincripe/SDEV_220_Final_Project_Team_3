@@ -11,7 +11,12 @@ content="width=device-width, initial-scale=1.0">
 <body>
 
     <header>
+        <div class="container">
+            <a href="{% url 'post_new' %}" class="top-menu">
+                {% include './icons/file-earmark-plus.svg' %} Add Sales Lead
+            </a>
         <h1><a href="/">Boost Auto LLC Sales Leads</a></h1>
+    </div>
         <ul>
             <li><a href="{% url 'sales_lead_list' %}">Sales Leads</a></li>
             <li><a href="{% url 'employees_vendors_list' %}">Employees and Vendors</a></li>
