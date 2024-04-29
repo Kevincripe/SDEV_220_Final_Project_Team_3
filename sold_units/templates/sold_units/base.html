@@ -6,12 +6,17 @@
 <meta charset="utf-8">
 <meta name="viewport"
 content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="{% static 'css/emp_vend.css' %}">
+<link rel="stylesheet" href="{% static 'css/sales.css' %}">
 </head>
 <body>
 
     <header>
-        <h1><a href="/">Boost Auto LLC Employees and Vendors</a></h1>
+        <div class="container">
+            <a href="{% url 'sold_new' %}" class="top-menu">
+                {% include './icons/file-earmark-plus.svg' %} Add Sold Unit
+            </a>
+        <h1><a href="/">Boost Auto LLC Sold Units</a></h1>
+    </div>
         <ul>
             <li><a href="{% url 'sales_lead_list' %}">Sales Leads</a></li>
             <li><a href="{% url 'sold_units_list' %}">Sold Units</a></li>

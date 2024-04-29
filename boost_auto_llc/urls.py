@@ -23,6 +23,7 @@ urlpatterns = [
     path('', include('sales_leads.urls')),
     path('employees_vendors/', include("employees_vendors.urls")),
     path('sales_leads/', include("sales_leads.urls")),
+    path('sold_units/', include("sold_units.urls")),
     path('loan_calculator/', include("loan_calculator.urls")),
     path('accounts/login/', views.LoginView.as_view(), name='login'),
     path('accounts/logout/', views.LogoutView.as_view(), name='logut'),

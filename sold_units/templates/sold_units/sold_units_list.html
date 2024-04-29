@@ -1,0 +1,15 @@
+{% extends 'sold_units/base.html' %}
+
+    {% block content %}
+    <h3>To Delete a Sale see Management</h3>
+    {% for sale in sold %}
+        <article>
+            <h3><a href="">{{ sale.Inventory }} </a></h3>
+            <p>{{ sale.Year_Make_Model }}</p>
+            <p>{{ sale.comments }}</p>
+            <time>{{ sale.published_date }}</time>
+            
+        </article>
+    {% endfor %}
+    {% endblock %}
+

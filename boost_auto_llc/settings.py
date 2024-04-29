@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'loan_calculator',
     'employees_vendors',
     'sales_leads',
+    'sold_units',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -110,7 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Chicago'
 
 USE_I18N = True
 
