@@ -1,0 +1,37 @@
+{% extends 'loan_calculator/base.html' %}
+
+    {% block content %}
+    
+    <div class="center">
+        <h1>Auto Loan Calculator</h1>
+        
+        <form action="result.html">
+            <input type="number" name="down_payment" placeholder="Enter Down Payment">
+            <br>
+            <br> 
+            <input type="number" name="interest_rate" placeholder="Enter Interest Rate">
+            <br>
+            <br>
+            <input type="number" name="num_of_months" placeholder="Enter Number of Months">
+            <br>
+            <br>
+            <input type="number" name="loan_amount" placeholder="Enter Loan Amount">
+            <br>
+            <br>
+            <button type="submit" name="calculate">Calculate</button>
+            
+        
+        </form>
+        </div>
+        
+        <style>
+          .center {
+            margin: auto;
+            width: 60%;
+            border: 3px solid #a5addb;
+            padding: 10px;
+          }
+        </style>
+        
+
+    {% endblock %}
