@@ -8,10 +8,12 @@ from .models import LoanCalculator
 def loan_calculator(request):
     return HttpResponse("Hello loan_calc!")
 
+# Basic loan_calc page view
 def loan_calc(request):
     calculations = LoanCalculator.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     return render(request, 'loan_calculator/loan_calc.html', {'calculations':calculations})
 
+# Result of html calcuklator form computed as needed
 def result(request):
     down_payment = float(request.GET.get('down_payment'))
     interest_rate = float(request.GET.get('interest_rate'))

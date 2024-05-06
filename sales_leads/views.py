@@ -10,6 +10,9 @@ from django.shortcuts import redirect
 def index(request):
     return HttpResponse("Hello, You are at the sales lead index")
 
+# Sales lead page is locked to Admin management only
+# Sales rep's need to clear with floor mgr to remove
+
 @login_required
 def sales_lead_list(request):
     sales = SalesLead.objects.filter(published_date__lte=timezone.now()).order_by('published_date')

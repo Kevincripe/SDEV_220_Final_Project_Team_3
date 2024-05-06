@@ -18,6 +18,9 @@ from django.contrib import admin
 from django.urls import include, path
 from django.contrib.auth import views
 
+# Home page is Sales Leads page as that is where customer wants 
+# user to land upon login
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('sales_leads.urls')),
