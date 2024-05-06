@@ -44,4 +44,4 @@ This README outlines the steps to set up and run the project effectively.
 
 - **Documentation:** The project's code should be well-commented to enhance understanding and maintainability.
 
-By following these steps, you should be able to successfully set up and run the Django project.
+By following these steps, you should be able to successfully set up and run the Boost Auto LLC Django project.
