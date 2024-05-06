@@ -39,6 +39,7 @@ This README outlines the steps to set up and run the project effectively.
    ```
 
    This will start the Django development server, typically running on http://127.0.0.1:8000/. Open your web browser and access the application at this address.
+   This app is running in Debut=False as we are not truly deploying this application here.
 
 **Additional Notes:**
 
