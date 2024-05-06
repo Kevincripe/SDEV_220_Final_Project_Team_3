@@ -19,7 +19,7 @@ This README outlines the steps to set up and run the project effectively.
 
    ```bash
    git clone https://github.com/Kevincripe/SDEV_220_Final_Project_Team_3.git
-   cd SDEV_220_Final_Project_Team_3
+
    ```
 
 2. **Install Dependencies:**
